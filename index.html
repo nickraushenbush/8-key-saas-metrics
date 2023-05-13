@@ -1,26 +1,155 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Net Dollar Retention Calculator</title>
+    <title>Key SaaS Metrics</title>
     <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
-    <div class="container">
-      <h1>Net Dollar Retention Calculator</h1>
+
+    <!-- Annual Recurring Revenue (ARR) Growth Rate Calculator -->
+
+    <div class="calculator">
+      <h2>Annual Recurring Revenue (ARR) Growth Rate Calculator</h2>
+      <form>
+        <label for="previous-arr">Previous ARR:</label>
+        <input type="number" id="previous-arr" required>
+    
+        <label for="current-arr">Current ARR:</label>
+        <input type="number" id="current-arr" required>
+    
+        <button type="button" id="calculate-arr-button">Calculate</button>
+      </form>
+      <div id="arr-result"></div>
+    </div>
+
+    <!--  Net Dollar Retention (NDR) Rate Calculator -->
+
+    <div class="calculator">
+      <h2>Net Dollar Retention (NDR) Rate Calculator</h2>
       <form>
         <label for="current-revenue">Current Period Revenue:</label>
-        <input type="number" id="current-revenue" name="current-revenue" required>
-
+        <input type="number" id="current-revenue" required>
+    
         <label for="lost-revenue">Revenue Lost:</label>
-        <input type="number" id="lost-revenue" name="lost-revenue" required>
-
+        <input type="number" id="lost-revenue" required>
+    
         <label for="previous-revenue">Previous Period Revenue:</label>
-        <input type="number" id="previous-revenue" name="previous-revenue" required>
-
-        <button type="button" id="calculate-button">Calculate</button>
+        <input type="number" id="previous-revenue" required>
+    
+        <button type="button" id="calculate-ndr-button">Calculate</button>
       </form>
-      <div id="result"></div>
+      <div id="ndr-result"></div>
     </div>
+    
+    <!--  Revenue Churn Rate Calculator -->
+
+    <div class="calculator">
+      <h2>Revenue Churn Rate Calculator</h2>
+      <form>
+        <label for="start-revenue">Revenue at Start of Period:</label>
+        <input type="number" id="start-revenue" required>
+    
+        <label for="end-revenue">Revenue at End of Period:</label>
+        <input type="number" id="end-revenue" required>
+    
+        <button type="button" id="calculate-churn-button">Calculate</button>
+      </form>
+      <div id="churn-result"></div>
+    </div>
+
+    <!--  Burn Multiple Calculator -->
+    
+    <div class="calculator">
+      <h2>Burn Multiple Calculator</h2>
+      <form>
+        <label for="net-burn">Net Burn:</label>
+        <input type="number" id="net-burn" required>
+    
+        <label for="net-new-arr">Net New ARR:</label>
+        <input type="number" id="net-new-arr" required>
+    
+        <button type="button" id="calculate-burn-multiple-button">Calculate</button>
+      </form>
+      <div id="burn-multiple-result"></div>
+    </div>
+
+    <!--  Net Promoter Score (NPS) -->
+    
+    <div class="calculator">
+      <h2>Net Promoter Score (NPS) Calculator</h2>
+      <form>
+        <label for="promoters">Number of Promoters (score 9-10):</label>
+        <input type="number" id="promoters" required>
+    
+        <label for="passives">Number of Passives (score 7-8):</label>
+        <input type="number" id="passives" required>
+    
+        <label for="detractors">Number of Detractors (score 0-6):</label>
+        <input type="number" id="detractors" required>
+    
+        <button type="button" id="calculate-nps-button">Calculate</button>
+      </form>
+      <div id="nps-result"></div>
+    </div>
+
+    <!--  Employee Net Promoter Score (eNPS) -->
+    
+    <div class="calculator">
+      <h2>Employee Net Promoter Score (eNPS) Calculator</h2>
+      <form>
+        <label for="employee-promoters">Number of Promoters (score 9-10):</label>
+        <input type="number" id="employee-promoters" required>
+    
+        <label for="employee-passives">Number of Passives (score 7-8):</label>
+        <input type="number" id="employee-passives" required>
+    
+        <label for="employee-detractors">Number of Detractors (score 0-6):</label>
+        <input type="number" id="employee-detractors" required>
+    
+        <button type="button" id="calculate-enps-button">Calculate</button>
+      </form>
+      <div id="enps-result"></div>
+    </div>
+
+    <!--  Burn Rate -->
+
+    <div class="calculator">
+      <h2>Burn Rate Calculator</h2>
+      <form>
+        <label for="start-cash">Cash at Start of Period:</label>
+        <input type="number" id="start-cash" required>
+    
+        <label for="end-cash">Cash at End of Period:</label>
+        <input type="number" id="end-cash" required>
+    
+        <label for="months">Number of Months:</label>
+        <input type="number" id="months" required>
+    
+        <button type="button" id="calculate-burn-rate-button">Calculate</button>
+      </form>
+      <div id="burn-rate-result"></div>
+    </div>
+    
+    <!--  Runway -->
+
+    <div class="calculator">
+      <h2>Runway Calculator</h2>
+      <form>
+        <label for="cash">Current Cash:</label>
+        <input type="number" id="cash" required>
+    
+        <label for="monthly-burn">Monthly Burn:</label>
+        <input type="number" id="monthly-burn" required>
+    
+        <button type="button" id="calculate-runway-button">Calculate</button>
+      </form>
+      <div id="runway-result"></div>
+    </div>
+    
+
+
     <script src="script.js"></script>
   </body>
 </html>
+
