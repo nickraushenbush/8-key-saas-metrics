@@ -1,4 +1,14 @@
-.container {
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #3d3b3b;
+  background-color: #fcfcfc;
+}
+
+body {
+  margin: 5% 10%;
+}
+
+.calculator {
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
@@ -25,14 +35,14 @@ input[type="number"] {
 
 button {
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: rgb(166, 101, 184);
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: rgb(158, 83, 179);
 }
 
 #result {
